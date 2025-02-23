@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">todolist</string>
+    <string name="loginTitle">Entrar</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="submit_login_btn">Entrar</string>
+    <string name="forgot_password">Esqueci minha senha</string>
+    <string name="register_link">Criar uma conta</string>
+    <string name="login_title">Entrar</string>
+    <string name="register_title">Registrar</string>
+    <string name="passwordConfirm">Confirmar senha</string>
+    <string name="submit_register_btn">Criar conta</string>
+    <string name="login_link">Entrar</string>
+    <string name="submit_forgot_password_btn">Recuperar senha</string>
+    <string name="home">Início</string>
+    <string name="title">Título</string>
+    <string name="description">Descrição</string>
+    <string name="date">Data</string>
+    <string name="time">Horário</string>
+    <string name="save">Salvar\n</string>
+    <string name="profile">Perfil</string>
+    <string name="username">username</string>
+    <string name="name">name</string>
+</resources>
