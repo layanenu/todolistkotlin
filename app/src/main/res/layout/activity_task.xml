@@ -22,12 +22,11 @@
                 android:id="@+id/back_button"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/arrow_back_24px"
+                android:src="@drawable/arrow_back_24"
                 android:layout_gravity="left"
                 android:layout_marginEnd="16dp"/>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-
     <LinearLayout
         android:id="@+id/body_title"
         android:layout_width="match_parent"
@@ -69,7 +68,7 @@
             android:id="@+id/date_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"/>
+            android:focusable="false"/>
         <ImageView
             android:id="@+id/date_icon"
             android:layout_width="25dp"
@@ -95,7 +94,7 @@
             android:id="@+id/time_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"/>
+            android:focusable="false"/>
         <ImageView
             android:id="@+id/time_icon"
             android:layout_width="25dp"

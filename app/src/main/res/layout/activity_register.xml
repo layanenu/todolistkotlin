@@ -34,24 +34,20 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/registerTitle"
             app:layout_constraintStart_toStartOf="parent"
+            android:inputType="textEmailAddress"
             android:hint="@string/email"
             android:padding="10dp"
             android:layout_marginTop="20dp"
             app:layout_constraintVertical_chainStyle="packed"
             />
-
-        <EditText
+        <fragment
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/emailInput"
-            app:layout_constraintStart_toStartOf="parent"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:padding="10dp"
             android:layout_marginTop="20dp"
-            app:layout_constraintVertical_chainStyle="packed"
-            />
+            android:name="dev.layane.todolist.fragments.PasswordDifficult"
+            app:layout_constraintTop_toBottomOf="@+id/emailInput"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/passwordConfirmInput"
@@ -62,7 +58,6 @@
             android:hint="@string/passwordConfirm"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:layout_marginTop="20dp"
             app:layout_constraintVertical_chainStyle="packed"
             />
 

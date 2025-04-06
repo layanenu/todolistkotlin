@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:title="@string/profile">
+
             <ImageView
                 android:id="@+id/logout"
                 android:layout_width="30dp"
@@ -45,12 +46,13 @@
             android:id="@+id/profile_image"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:background="@drawable/person_48"
+            android:background="@drawable/person_24"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
             android:layout_marginTop="80dp"
             />
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/camera_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
@@ -62,6 +64,7 @@
             />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/gallery_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -70,7 +73,6 @@
             app:layout_anchor="@+id/profile_image"
             android:layout_marginEnd="90dp"
             android:layout_marginTop="-56dp"/>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,6 +86,7 @@
                 android:id="@+id/email_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 android:hint="@string/email" />
 
             <EditText
@@ -98,13 +101,19 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/name" />
 
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone" />
+
             <Button
                 android:id="@+id/save_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Salvar" />
         </LinearLayout>
-
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
