@@ -16,6 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
+
         <TextView
             android:id="@+id/registerTitle"
             android:layout_width="match_parent"
@@ -24,71 +25,54 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="40sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:textSize="40sp" />
 
-        <EditText
+        <!-- Substituí o EditText pelo fragmento EmailInput -->
+        <fragment
             android:id="@+id/emailInput"
+            android:name="dev.layane.todolist.fragments.EmailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/registerTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            android:inputType="textEmailAddress"
-            android:hint="@string/email"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintVertical_chainStyle="packed"
-            />
+            android:layout_marginTop="20dp" />
+
         <fragment
             android:id="@+id/passwordInput"
+            android:name="dev.layane.todolist.fragments.PasswordDifficult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:name="dev.layane.todolist.fragments.PasswordDifficult"
-            app:layout_constraintTop_toBottomOf="@+id/emailInput"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:layout_marginTop="20dp" />
 
         <EditText
             android:id="@+id/passwordConfirmInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/passwordInput"
-            app:layout_constraintStart_toStartOf="parent"
             android:hint="@string/passwordConfirm"
             android:inputType="textPassword"
             android:padding="10dp"
-            app:layout_constraintVertical_chainStyle="packed"
-            />
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:id="@+id/forgotPassword"
-            android:layout_marginTop="8sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/passwordConfirmInput"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8sp"
             android:textAlignment="center"
-            android:text="@string/forgot_password"/>
+            android:text="@string/forgot_password" />
 
         <Button
             android:id="@+id/submitRegisterBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/submit_register_btn"
-            app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:text="@string/submit_register_btn" />
 
         <TextView
             android:id="@+id/login"
-            android:layout_marginTop="8sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/submitRegisterBtn"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8sp"
             android:textAlignment="center"
-            android:text="@string/login_link"/>
+            android:text="@string/login_link" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
